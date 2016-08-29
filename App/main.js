@@ -1,17 +1,16 @@
+/* global document */
 import React from 'react';
 import ReactDOM from 'react-dom';
-/* global document */
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import TraceAndWritePage from './TraceAndWritePage';
+import reducers from './reducers';
 
-class CommentBox extends React.Component {
-  render() {
-    return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
-      </div>
-    );
-  }
-}
+const store = createStore(reducers);
+
 ReactDOM.render(
-  <CommentBox />,
+  <Provider store={store}>
+    <TraceAndWritePage />
+  </Provider>,
   document.getElementById('content')
 );
