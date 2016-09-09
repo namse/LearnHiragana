@@ -4,9 +4,9 @@ const styles = {
   text: {
     height: '100%',
     width: '100%',
-    'text-align': 'center',
-    'font-size': '5vh',
-    'line-height': '10vh',
+    textAlign: 'center',
+    fontSize: '5vh',
+    lineHeight: '10vh',
   },
 };
 

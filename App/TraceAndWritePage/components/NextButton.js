@@ -5,9 +5,9 @@ const styles = {
     width: '50%',
     height: '100%',
     flex: 1,
-    'text-align': 'center',
-    'font-size': '10vh',
-    'line-height': '20vh',
+    textAlign: 'center',
+    fontSize: '10vh',
+    lineHeight: '20vh',
   },
 };
 

@@ -4,9 +4,9 @@ const styles = {
   text: {
     height: '100%',
     width: '100%',
-    'text-align': 'center',
-    'font-size': '15vh',
-    'line-height': '30vh',
+    textAlign: 'center',
+    fontSize: '15vh',
+    lineHeight: '30vh',
   },
 };
 
@@ -15,8 +15,11 @@ export default class TargetJapanese extends React.Component {
     const {
       targetJapanese,
     } = this.props;
+    const imageURI = `Data/withBackground/${targetJapanese}.gif`;
     return (
-      <div style={styles.text}>{targetJapanese}</div>
+      <div style={styles.text}>
+        <img src={imageURI} alt={targetJapanese} />
+      </div>
     );
   }
 }
